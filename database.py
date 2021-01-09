@@ -5,7 +5,7 @@ import boto3
 # https://docs.aws.amazon.com/general/latest/gr/rande.html
 # https://docs.aws.amazon.com/general/latest/gr/ddb.html
 
-error error do not run
+
 
 def load_movies(movies, dynamodb=None):
     if not dynamodb:
@@ -23,6 +23,6 @@ def load_movies(movies, dynamodb=None):
 
 
 if __name__ == '__main__':
-    with open("moviedata.json") as json_file:
-        movie_list = json.load(json_file, parse_float=Decimal)
-    load_movies(movie_list)
+    #with open("moviedata.json") as json_file:
+     #   movie_list = json.load(json_file, parse_float=Decimal)
+    #load_movies(movie_list)
